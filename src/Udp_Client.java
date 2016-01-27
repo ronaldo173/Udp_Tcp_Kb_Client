@@ -23,11 +23,6 @@ public class Udp_Client {
             System.out.println(packet.getSocketAddress());
 
         ///...
-        byte[] bufSent = StringToSend.getBufferToSent();
-        DatagramPacket datagramPacket= new DatagramPacket(buf, buf.length,
-                packet.getSocketAddress());
-        socket.send(datagramPacket);
-        System.out.println("sended");
 
         socket.close();
     }
